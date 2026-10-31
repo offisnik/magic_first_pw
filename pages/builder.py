@@ -8,5 +8,5 @@ def username():
 def email():
     return faker.email()
 
-def password():
-    return faker.password(10)
+def password(length=10):
+    return faker.password(length)
