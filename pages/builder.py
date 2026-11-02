@@ -1,4 +1,5 @@
 from faker import Faker
+import random
 
 faker = Faker()
 
@@ -10,3 +11,9 @@ def email():
 
 def password(length=10):
     return faker.password(length)
+
+def phone():
+    return Faker('ru_RU').phone_number()
+
+def rand_int(a=1):
+    return random.randint(a, 6)

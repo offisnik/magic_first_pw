@@ -14,6 +14,8 @@ def test_success_register_simple_form(driver, country):
     success_register = SimpleForm(driver)
     success_register.open_page()
 
+    success_register.check_tooltips()
+
     success_register.fill_user_form(username())
     success_register.fill_email_form(email())
     success_register.fill_password_form(password())
