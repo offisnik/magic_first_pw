@@ -15,7 +15,6 @@ class DifficultForms:
         self.del_phone_btn = driver.locator('//button[@onclick="removePhoneField(this)"]')
         self.submit_btn = driver.locator('#dynSubmitBtn')
         self.submit_txt = driver.locator('(//div[@id="dynFormResult"]//p)[1]')
-        self.one_dialog = driver.on('dialog', lambda dialog: dialog.message)
 
     """Открытие страницы"""
     def open_page(self):
